@@ -6,15 +6,15 @@ Created on Sat Jul 27 11:13:53 2019
 @author: amit
 """
 
-import os
-import numpy as np
-import pandas as pd
+# import os
+# import numpy as np
+# import pandas as pd
 
 ## INPUTTING THE INTEGER VALUES...
 
-N = int(input())
-arr = input()   # takes the whole line of n numbers
-RA = list(map(int,arr.split(' '))) # split those numbers with space( becomes ['2','3','6','6','5']) and then map every element into int (becomes [2,3,6,6,5]
+# N = int(input())
+# arr = input()   # takes the whole line of n numbers
+# RA = list(map(int,arr.split(' '))) # split those numbers with space( becomes ['2','3','6','6','5']) and then map every element into int (becomes [2,3,6,6,5]
 
 #data = []
 #n = int(raw_input('Enter how many elements you want: '))
@@ -23,42 +23,42 @@ RA = list(map(int,arr.split(' '))) # split those numbers with space( becomes ['2
 #    data.append(x)
 #print(data)
 
-ref_RA = [1,2,3,4,5,6]
-counterArr = [] 
-count = 1
-i=j=0  
+# ref_RA = [1,2,3,4,5,6]
+# counterArr = [] 
+# count = 1
+# i=j=0  
 
-for k in range(7):
-    print('k=', k)
-    if i>j or i==0:
-        j=i
-        if RA[i]==RA[-i-1] and RA[i]==ref_RA[count-1]:
+# for k in range(7):
+#     print('k=', k)
+#     if i>j or i==0:
+#         j=i
+#         if RA[i]==RA[-i-1] and RA[i]==ref_RA[count-1]:
            
-            print('i=',i,'RA= ',RA[i],'count= ', count-1, 'ref_RA=',ref_RA[count-1])
-            i+=1
+#             print('i=',i,'RA= ',RA[i],'count= ', count-1, 'ref_RA=',ref_RA[count-1])
+#             i+=1
             
-        counterArr.insert(count-1, i+1-j)
-        count += 1
-        print('the "i"={0} and "j"= {1}'.format(i, j))
-        print('count=', count)
-        continue
-    else:
-        print("No more Rainbow")
-        break
+#         counterArr.insert(count-1, i+1-j)
+#         count += 1
+#         print('the "i"={0} and "j"= {1}'.format(i, j))
+#         print('count=', count)
+#         continue
+#     else:
+#         print("No more Rainbow")
+#         break
         
-else:
-    print('out of For-loop')
+# else:
+#     print('out of For-loop')
     
         
         
-#for i in range(len(RA)):
-#     if(RA[i]==RA[-i-1]):
-#         
-#     else: print('False')
+# #for i in range(len(RA)):
+# #     if(RA[i]==RA[-i-1]):
+# #         
+# #     else: print('False')
 
 
-################################
-
+# ################################
+## Code Start from here  ::
 T = int(input('Enter the number of test cases= '))
 for i in range(T):
     N = int(input())
